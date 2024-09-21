@@ -1,0 +1,44 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+  overflow-x: hidden;
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Anten;
+    src: url(../font/Anton-Regular.ttf);
+}
+  
+.abc{
+    font-family:myFirstFont ;
+}
+.titleAll{
+  font-family:Anten ;
+}
+
+
+  /* ..............Pagination css.............  */
+  
+  
+
+  
+  
+
+/* .swiper-wrapper{
+  /* border:10px solid green; */
+  /* height:320px; */
+/* }  */

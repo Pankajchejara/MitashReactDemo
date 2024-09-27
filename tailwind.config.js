@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       screens: {
         'custom': '500px',
+        
          // Custom breakpoint for 1000px
       },
     },

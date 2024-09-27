@@ -11,6 +11,8 @@
 }
 body{
   overflow-x: hidden;
+  width: 100%;
+  
 }
 
 
@@ -22,6 +24,10 @@ body{
     font-family: Anten;
     src: url(../font/Anton-Regular.ttf);
 }
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Black.otf);
+}
   
 .abc{
     font-family:myFirstFont ;
@@ -30,6 +36,13 @@ body{
   font-family:Anten ;
 }
 
+.AllTitle{
+  font-family:Poppins ;
+}
+
+.space{
+  padding:0px 25px;
+}
 
   /* ..............Pagination css.............  */
   
@@ -38,7 +51,4 @@ body{
   
   
 
-/* .swiper-wrapper{
-  /* border:10px solid green; */
-  /* height:320px; */
-/* }  */
+  

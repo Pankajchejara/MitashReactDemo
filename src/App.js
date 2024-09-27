@@ -1,37 +1,37 @@
-import React from 'react'
-import RounderImage from './components/RounderImage'
-import Reviews from './components/Reviews'
-import Features from './components/Features'
-import BlueSection from './components/BlueSection'
-import ImageSection from './components/ImageSection'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import Dual from './components/Dual'
-import HeroSection from './components/HeroSection'
-import ReactSlider from './components/ReactSlider'
-const App = () => {
-  return (
-    <div className='w-[100vw]  overflow-x-hidden h-[100vh]'>
-      {/* <Navbar/> */}
-{/* <HeroSection/> */}
-{/* <Dual title={"Laboris et officia deserunt"} height={550} desc={'Setta officia aut labore pro vestri liberi mensili, weekly, vel etiam quotidie! Docete vestra liberi per praemia pro eorum conatibus. Assigna officia et solvere liberos tuos cum finitum est. Cito discunt per experientiam'} direction={'flex-row'} image={'https://cdn.pixabay.com/photo/2021/01/01/21/31/halloween-5880068_640.jpg'}/> */}
+import React ,{useEffect} from 'react'
 
-      {/* <BlueSection/>  */}
-      {/* <section>
-        <div  >
-        <Dual title={"Laboris et officia deserunt"} height={550} desc={'Setta officia aut labore pro vestri liberi mensili, weekly, vel etiam quotidie! Docete vestra liberi per praemia pro eorum conatibus. Assigna officia et solvere liberos tuos cum finitum est. Cito discunt per experientiam'}  direction={'flex-row'} image={'https://cdn.pixabay.com/photo/2022/10/07/04/04/haunted-house-7504018_640.jpg'} />
-        <Dual  title={"Laboris et officia deserunt"} height={550} desc={'Setta officia aut labore pro vestri liberi mensili, weekly, vel etiam quotidie! Docete vestra liberi per praemia pro eorum conatibus. Assigna officia et solvere liberos tuos cum finitum est. Cito discunt per experientiam'} direction={'flex-row-reverse'} image={'https://cdn.pixabay.com/photo/2020/02/08/16/14/house-4830491_640.jpg'}/>
-        </div> */}
-     
-      {/* </section> */}
-      {/* <ReactSlider/>
-      <Features/> */}
-      {/* <RounderImage/> */}
-      
-      <Reviews/>
-      {/* <ImageSection/>
-      <Footer/> */}
+import Navbar from './components/common/Navbar'
+import Footer from './components/common/Footer'
+import HomePage from './components/navbar/HomePage'
+import FeatureSection from './components/navbar/FeatureSection'
+import Benefits_page1 from './components/navbar/Benefits_page1'
+import Benefits_page2 from './components/navbar/Benefits_page2'
+import Benefits_page3 from './components/navbar/Benefits_page3'
+import { Route, Routes } from 'react-router-dom'
+import For_us from './components/navbar/For_us'
+import Blog from './components/navbar/Blog'
+const App = () => {
+  
+  
+  return (
+    <div className=' overflow-x-hidden h-auto '>
+      <Navbar/>
+   
+
+ 
+
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/Page1' element={<Benefits_page1/>}/>
+        <Route path='/Page2' element={<Benefits_page2/>}/>
+        <Route path='/Page3' element={<Benefits_page3/>}/>
+        <Route path='/feature' element={<FeatureSection/>}/>
+        <Route path='/forUs' element={<For_us/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+      </Routes>
+      <Footer/>
     </div>
+
   )
 }
 

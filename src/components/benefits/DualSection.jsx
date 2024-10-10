@@ -7,9 +7,9 @@ const DualSection = ({ title, desc, spanTitle, bg, direction }) => {
       className={`flex   `} 
       style={{ backgroundColor: bg }}
     >
-      <div className={`w-11/12 container mx-auto pt-[30px]  lg:gap-y-0 gap-y-[50px]  h-auto lg:h-[530px] items-center lg:items-start flex ${direction === 'flex-row-reverse' ? 'lg:flex-row-reverse flex-col' : 'lg:flex-row  flex-col-reverse'} justify-center px-[50px]  lg:px-0 lg:justify-between `}>
+      <div className={`w-[1200px] container mx-auto pt-[50px]  lg:gap-y-0 gap-y-[50px]  h-auto lg:h-[550px] items-center lg:items-start flex ${direction === 'flex-row-reverse' ? 'lg:flex-row-reverse flex-col' : 'lg:flex-row  flex-col-reverse'} justify-center px-[50px]  lg:px-0 lg:justify-between `}>
         {/* content */}
-        <div className='w-full lg:w-[586px] mt-[50px]'>
+        <div className='w-full lg:w-[586px] '>
           <h2 className='text-[28px] sm:text-[54px] AllTitle'>
             <span className='text-[#1B7EF6]'>{spanTitle}</span> {title}
           </h2>

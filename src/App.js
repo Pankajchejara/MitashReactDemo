@@ -2,14 +2,14 @@ import React ,{useEffect} from 'react'
 
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
-import HomePage from './components/navbar/HomePage'
-import FeatureSection from './components/navbar/FeatureSection'
-import Benefits_page1 from './components/navbar/Benefits_page1'
-import Benefits_page2 from './components/navbar/Benefits_page2'
-import Benefits_page3 from './components/navbar/Benefits_page3'
+import HomePage from './pages/HomePage'
+import FeatureSection from './pages/FeatureSection'
+import Benefits_page1 from './pages/Benefits_page1'
+import Benefits_page2 from './pages/Benefits_page2'
+import Benefits_page3 from './pages/Benefits_page3'
 import { Route, Routes } from 'react-router-dom'
-import For_us from './components/navbar/For_us'
-import Blog from './components/navbar/Blog'
+import For_us from './pages/For_us'
+import Blog from './pages/Blog'
 const App = () => {
   
   

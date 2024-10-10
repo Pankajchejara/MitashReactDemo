@@ -1,14 +1,20 @@
 import React from 'react'
-import HeroSection2 from '../benefits/HeroSection2'
-import Image from '../../assests/images/2 1.png'
-import DualMobileSection from '../benefits/DualMobileSection'
-import BlueSection from '../benefits/BlueSection'
-import Image17 from '../../assests/images/image 17.png'
-import HeroSection from '../benefits/HeroSection'
+import HeroSection2 from '../components/benefits/HeroSection2'
+import Image from '../assests/images/2 1.png'
+import DualMobileSection from '../components/benefits/DualMobileSection'
+import BlueSection from '../components/benefits/BlueSection'
+import Image17 from '../assests/images/image 17.png'
+import HeroSection from '../components/benefits/HeroSection'
+import { Helmet } from 'react-helmet';
 const Benefits_page2 = () => {
   return (
     <div className='mt-[50px]  '>
-      <HeroSection spanTitle={"Lorem ipsum "} title={"Lorem ipsum ipsum ipsum ipsum"}/>
+
+<Helmet>
+        <title>Benefits Page 2 </title>
+        <meta name="description" content="Discover the various sections like Hero, DualMobile, and BlueSection with engaging content on Benefits Page 2." />
+      </Helmet>
+      <HeroSection spanTitle={"Lorem ipsum "} title={"Lorem ipsum ipsum ipsum ipsum"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"}/>
       <HeroSection2 ImageProp={Image} overlap={true} /> 
 
 

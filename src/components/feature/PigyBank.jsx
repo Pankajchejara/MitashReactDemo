@@ -6,7 +6,7 @@ const PigyBank = () => {
   return (
    
       <div className=' mt-[10px] sm:mt-[50px] px-[16px]' >
-    <div className='max-w-[1200px] px-[50px] lg:px-0  h-auto lg:h-[450px] items-center  flex flex-col lg:flex-row justify-between  gap-y-[100px] gap-x-[50px]  sm:gap-y-[80px] mx-auto'>
+    <div className='max-w-[1200px] px-[50px] lg:px-0  h-auto lg:h-[450px] items-center  flex flex-col lg:flex-row justify-between  gap-y-[130px] gap-x-[50px]  sm:gap-y-[80px] mx-auto'>
 
        <div className=' w-full lg:w-[550px] h-[191px]'>
 <h2 className=' text-[28px] sm:text-[42px] AllTitle text-[#181818]'><span className='text-[#1B7EF6]'> Lorem dora </span>Ipusm Dod</h2>

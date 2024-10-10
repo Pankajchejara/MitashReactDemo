@@ -4,6 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import Logo from '../../assests/images/Logo_white.png'
 
 const Footer = () => {
   return (
@@ -12,7 +13,9 @@ const Footer = () => {
         
         {/* first div */}
         <div className="w-full lg:w-1/4 mb-6 sm:mb-0 items-center lg:items-start flex flex-col">
-          <div className="bg-white p-3 w-12 h-12 rounded-md mb-4"></div>
+          <div className=" p-3 w-[70px] h-[70px] rounded-md mb-4">
+            <img src={Logo} alt='loading..' className='w-full h-full object-cover'/>
+          </div>
           <p>Setta officia aut labore pro vestri liberi mensili</p>
         </div>
 

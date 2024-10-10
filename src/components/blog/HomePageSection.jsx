@@ -10,7 +10,7 @@ import { GoArrowUpRight } from 'react-icons/go';
 const HomePageSection = () => {
   return (
     <div className='container mx-auto'>
-      <div className='flex flex-col  gap-4 p-4 lg:p-[50px]'>
+      <div className='flex flex-col  gap-4 p-4 '>
       {/* Title Section */}
       <div >
         <h1 className='text-xl md:text-2xl font-bold'>Recent Blog Posts</h1>

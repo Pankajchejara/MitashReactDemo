@@ -1,7 +1,7 @@
 import React from 'react';
 import ComputerImage from '../../assests/images/computerImage.png'
 import TabletImage from '../../assests/images/image 35.png'
-import watchImage from '../../assests/images/image 26.png'
+import watchImage from '../../assests/images/image 32.png'
 const ImageSection = () => {
   return (
     <div className='w-full   bg-blue-200  '>
@@ -19,7 +19,7 @@ Setta officia aut labore pro vestri liberi mensili
             alt='Main Image' 
             className='object-cover w-full h-full' 
           />
-          <div className='absolute -bottom-[5%] -left-[10%] w-[20%] h-[45%] '>
+          <div className='absolute -bottom-[5%] -left-[10%] w-[25%] h-[45%] '>
             <img 
               src={watchImage} 
               alt='Image 1' 

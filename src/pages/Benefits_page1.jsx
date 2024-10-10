@@ -1,16 +1,22 @@
 import React from 'react'
-import HeroSection from '../benefits/HeroSection'
-import HeroSection2 from '../benefits/HeroSection2'
-import HeroSection3 from '../benefits/HeroSection3'
-import GrowSection from '../benefits/GrowSection'
-import BlueSection from '../benefits/BlueSection'
-import DualSection from '../benefits/DualSection'
-import Acc from '../benefits/AccordionItem'
-import Image from '../../assests/images/shutterstock_1570550179 2.png'
+import HeroSection from '../components/benefits/HeroSection'
+import HeroSection2 from '../components/benefits/HeroSection2'
+import HeroSection3 from '../components/benefits/HeroSection3'
+import GrowSection from '../components/benefits/GrowSection'
+import BlueSection from '../components/benefits/BlueSection'
+import DualSection from '../components/benefits/DualSection'
+import Acc from '../components/benefits/AccordionItem'
+import Image from '../assests/images/shutterstock_1570550179 2.png'
+import { Helmet } from 'react-helmet';
 const Benefits_page1 = () => {
   return (
     <div className='mt-[50px] '>
-      <HeroSection spanTitle={"Lorem ipsum "} title={"Lorem ipsum ipsum ipsum ipsum"}/>
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>Benefits Page1 </title>
+        <meta name="description" content="This is the benefits page of our website. Learn about various sections like Hero, Grow, BlueSection, and Dual sections with engaging content." />
+      </Helmet>
+      <HeroSection spanTitle={"Lorem ipsum "} title={"Lorem ipsum ipsum ipsum ipsum"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"}/>
       <HeroSection2 ImageProp={Image} overlap={true}/>   
       <HeroSection3/>  
       <GrowSection/>  

@@ -4,7 +4,7 @@ const HeroSection3 = () => {
   return (
     
       <div className='px-[16px] py-0 sm:py-[50px]'>
-  <div className='max-w-[1200px]  gap-[50px] lg:px-0 px-[50px] flex justify-center items-center lg:items-start lg:justify-between mx-auto flex-col lg:flex-row items-centermx-auto h-auto lg:h-[450px] '>
+  <div className='  pb-[50px] sm:pb-0 max-w-[1200px]  gap-[50px] lg:px-0 px-[50px] flex justify-center items-center lg:items-start lg:justify-between mx-auto flex-col lg:flex-row items-centermx-auto h-auto lg:h-[450px] '>
   
     <div className=' w-full h-auto lg:w-[550px] lg:h-[191px]'>
   <h2 className=' text-[28px] sm:text-[42px] AllTitle text-[#181818]'>Lorem Ipsum</h2>

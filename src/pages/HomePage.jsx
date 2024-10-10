@@ -1,19 +1,28 @@
 import React from 'react'
-import HeroSection from '../homepage/HeroSection'
-import GoalSection from '../homepage/GoalSection'
-import Dual from '../homepage/Dual'
-import BlueSection from '../homepage/BlueSection'
-import ReactSlider from '../homepage/ReactSlider'
-import Features from '../homepage/Features'
-import RounderImage from '../homepage/RounderImage'
-import Reviews from '../homepage/Reviews'
-import ImageSection from '../homepage/ImageSection'
-import MobileMoneyImage from '../../assests/images/MobileMoneyImage.png'
-import ShoppiongImage from '../../assests/images/ShoppingImage.png'
+import HeroSection from '../components/homepage/HeroSection'
+import GoalSection from '../components/homepage/GoalSection'
+import Dual from '../components/homepage/Dual'
+import BlueSection from '../components/homepage/BlueSection'
+import ReactSlider from '../components/homepage/ReactSlider'
+import Features from '../components/homepage/Features'
+import RounderImage from '../components/homepage/RounderImage'
+import Reviews from '../components/homepage/Reviews'
+import ImageSection from '../components/homepage/ImageSection'
+import MobileMoneyImage from '../assests/images/MobileMoneyImage.png'
+import ShoppiongImage from '../assests/images/ShoppingImage.png'
+import { Helmet } from 'react-helmet';
 const HomePage = () => {
   return (
   
       <div className='mt-[50px]'>
+
+<Helmet>
+        <title>Home Page </title>
+        <meta
+          name="description"
+          content="Welcome to our homepage! Discover the features of our platform, including goal tracking, dual section demos, interactive sliders, and user reviews. Explore the tools that help manage daily tasks efficiently."
+        />
+      </Helmet> 
       <HeroSection/>        
 <GoalSection/>  
 

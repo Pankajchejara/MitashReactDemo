@@ -9,7 +9,7 @@ import { Pagination, Autoplay } from 'swiper/modules'; // Import the Autoplay mo
 const ReactSlider = () => {
   return (
     <div className='w-full bg-black h-auto'>
-      <div className='w-11/12 flex md:flex-row flex-col h-auto p-15 sm:p-10 items-center justify-between mx-auto'>
+      <div className='w-11/12 flex lg:flex-row flex-col h-auto p-15 sm:p-10 items-center justify-between mx-auto'>
         {/* Area div */}
         <div>
           <div className="bg-black text-white p-10">
@@ -23,10 +23,10 @@ const ReactSlider = () => {
         </div>
 
         {/* Swiper */}
-        <div className='w-full md:w-[50%] mx-auto max-h-[450px]'>
+        <div className='w-full  md:w-[600px] mx-auto max-h-[450px]'>
           <Swiper
             slidesPerView={1.5} // Show 1 full slide and half of the next one
-            spaceBetween={20} // No space between slides to avoid gaps
+            spaceBetween={5} // No space between slides to avoid gaps
             centeredSlides={false} // Avoid centering the slides
             pagination={{
               clickable: true,
@@ -43,7 +43,7 @@ const ReactSlider = () => {
                 spaceBetween: 10,
               },
               640: {
-                slidesPerView: 1.3,
+                slidesPerView: 1,
                 spaceBetween: 15,
               },
               768: {
@@ -55,22 +55,25 @@ const ReactSlider = () => {
                 spaceBetween: 30,
               },
             }} // Include the Autoplay module
-            className="mySwiper"
+            className="mySwiper "
           >
             {
               data.map((item) => {
                 return (
                   <SwiperSlide key={item.id}>
-                    <div className='w-full mb-10 min-h-[400px] bg-black p-5 rounded-lg flex flex-col'>
+                    <div className='w-full   mb-10 min-h-[400px] bg-black p-5 rounded-lg flex flex-col '>
                       {/* Image Section */}
-                      <div className='w-full h-[150px] flex justify-center items-center rounded-lg overflow-hidden'>
-                        <img src={item.image} alt={item.title} className='object-cover w-full h-full transition-transform duration-300 hover:scale-105' />
-                      </div>
+                      <div className='w-full h-full sm:w-[400px] sm:h-[400px] rounded-[35px] relative  '>
+                        <img src={item.image} alt={item.title} className='object-cover w-full h-full transition-transform duration-300 hover:scale-105 rounded-[35px]' />
+                        
 
                       {/* Text Section */}
-                      <h2 className='font-bold text-xl sm:text-2xl text-white mt-4'>{item.title}</h2>
-                      <p className='text-white text-[16px] sm:text-[18px] mt-2'>{item.description}</p>
+                      <div className='absolute w-full h-full top-0 left-0 p-[20px] flex flex-col items-center  mx-auto'>
+                      <h2 className='font-bold text-xl sm:text-[28px] AllTitle lg:leading-[48px] text-white mt-4'>{item.title}</h2>
+                      <p className='text-white text-[16px] sm:text-[18px] mt-2'>{item.description}</p> </div> </div>
                     </div>
+
+
                   </SwiperSlide>
                 );
               })
